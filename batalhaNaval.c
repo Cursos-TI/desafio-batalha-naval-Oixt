@@ -9,11 +9,20 @@ int main() {
     int agua = 0;
 
 
-    printf("*BATALHA NAVAL*\n\n");
+    printf("    * BATALHA NAVAL *\n\n");
     printf("   %c %c %c %c %c %c %c %c %c %c \n", letras[0],letras[1],letras[2],letras[3],letras[4],letras[5],letras[6],letras[7],letras[8],letras[9]);
 //impressao do tabuleiro
     for (int i = 0; i < 10; i++){
-        printf("%d  ",i+1);
+
+        //organizacao na casa decimal
+        if (i==9)
+        {
+            printf("%d ",i+1);
+        }else{
+            printf("%d  ",i+1);
+        }
+        
+        
         for (int j = 0; j < 10; j++){
             tabuleiro[i][j] = agua;
 
