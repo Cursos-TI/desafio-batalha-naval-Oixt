@@ -20,7 +20,7 @@ int main() {
     // Implementacao dos barcos
     for (int n = 0; n < 3; n++) {
         tabuleiro[6][2 + n] = barco; 
-
+    }
     for (int n = 0; n < 3; n++) {
         tabuleiro[3 + n][9] = barco; 
 
@@ -44,7 +44,7 @@ int main() {
         }
         for (int j = 0; j < 10; j++){
             printf("%d ", tabuleiro[i][j]);
-            
+
         }
         printf("\n");
     }
